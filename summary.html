@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top-nav">
+      <div class="score">
+        <p>Score: 1000</p>
+      </div>
+      <div class="time">
+        <p>Time: 30secs</p>
+      </div>
+      <div class="user">
+        <p>Player: Eazy</p>
+      </div>
+    </div>
+    <div class="quiz-container">
+      
+      <h2>Congratulations you made it to the end!!!</h2>
+      <h4>You answered 10/10 questions correct</h4>
+      <div class="next">
+        <button class="next" id="btn6">Logout</button>
+      </div>
+    </div>
+
+    <!-- <script src="js/qstn1.js"></script> -->
+    <script>
+$(document).ready(function () {
+  function getData() {
+    let loggedInUser = localStorage.getItem("loggedInUser");
+    let showData = $("#welcome");
+
+    if (loggedInUser) {
+      showData.text(
+        `Hello ${loggedInUser}! You're welcome to QUIZ-APP, where we make the lives of developers easy with tutorials that teaches how to solve real-world problems.`
+      );
+    } else {
+      showData.text("User not found. Please login.");
+    }
+  }
+
+  getData();
+
+  $("#btn6").click(function (e) {
+    e.preventDefault();
+    localStorage.removeItem("loggedInUser");
+    window.location.href = "landing.html";
+    console.log(showData);
+  });
+});
+
+    </script>
+  </body>
+</html>

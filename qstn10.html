@@ -8,7 +8,19 @@
     <title>Document</title>
   </head>
   <body>
+    <div class="top-nav">
+      <div class="score">
+        <p>Score: 0</p>
+      </div>
+      <div class="time">
+        <p>Time: 30secs</p>
+      </div>
+      <div class="user">
+        <p>Player: Eazy</p>
+      </div>
+    </div>
     <div class="quiz-container">
+      
       <h1>Front-End Explorer Quiz</h1>
       <div class="question">
         <h2>Question 10/10</h2>
@@ -29,10 +41,36 @@
         </h6>
       </div>
       <div class="next">
-        <button class="next" id="btn4">Next</button>
+        <button class="next" id="btn6">Next</button>
       </div>
     </div>
 
-    <script src="js/landing.js">    </script>
+    <!-- <script src="js/qstn1.js"></script> -->
+    <script>
+$(document).ready(function () {
+  function getData() {
+    let loggedInUser = localStorage.getItem("loggedInUser");
+    let showData = $("#welcome");
+
+    if (loggedInUser) {
+      showData.text(
+        `Hello ${loggedInUser}! You're welcome to QUIZ-APP, where we make the lives of developers easy with tutorials that teaches how to solve real-world problems.`
+      );
+    } else {
+      showData.text("User not found. Please login.");
+    }
+  }
+
+  getData();
+
+  $("#btn6").click(function (e) {
+    e.preventDefault();
+    localStorage.removeItem("loggedInUser");
+    window.location.href = "summary.html";
+    console.log(showData);
+  });
+});
+
+    </script>
   </body>
 </html>
