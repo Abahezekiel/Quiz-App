@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Front-End Explorer Quiz</h1>
+      <div class="question">
+        <h2>Question 3/10</h2>
+        <button class="option">HTML ID's can only be used once</button>
+      </div>
+      <div class="options">
+        <div class="alpha">
+          <button class="option">True</button>
+          <button class="option">False</button>
+        </div>
+      </div>
+      <div class="sum">
+        <h3>Correct!</h3>
+        <h6>
+          True: ID's are unique and each page can only have one element with
+          that ID.
+        </h6>
+      </div>
+      <div class="next">
+        <button class="next" id="btn6">Next</button>
+      </div>
+    </div>
+
+    <!-- <script src="js/qstn1.js"></script> -->
+    <script>
+$(document).ready(function () {
+  function getData() {
+    let loggedInUser = localStorage.getItem("loggedInUser");
+    let showData = $("#welcome");
+
+    if (loggedInUser) {
+      showData.text(
+        `Hello ${loggedInUser}! You're welcome to QUIZ-APP, where we make the lives of developers easy with tutorials that teaches how to solve real-world problems.`
+      );
+    } else {
+      showData.text("User not found. Please login.");
+    }
+  }
+
+  getData();
+
+  $("#btn6").click(function (e) {
+    e.preventDefault();
+    localStorage.removeItem("loggedInUser");
+    window.location.href = "qstn4.html";
+    console.log(showData);
+  });
+});
+
+    </script>
+  </body>
+</html>

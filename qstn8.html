@@ -11,36 +11,34 @@
     <div class="quiz-container">
       <h1>Front-End Explorer Quiz</h1>
       <div class="question">
-        <h2>Question 1/10</h2>
-        <button class="option">
-          How do you call the function 'myFunction' ?
-        </button>
+        <h2>Question 8/10</h2>
+        <button class="option">var a = 11; What does 'typeof a' return?</button>
       </div>
       <div class="options">
         <div class="alpha">
-          <button class="option">myFunction</button>
-          <button class="option">func myFunction()</button>
+          <button class="option">object</button>
+          <button class="option">array</button>
         </div>
         <div class="alpha">
-          <button class="option">myFunction()</button>
-          <button class="option">None of those</button>
+          <button class="option">string</button>
+          <button class="option">undefined</button>
         </div>
       </div>
       <div class="sum">
         <h3>Correct!</h3>
         <h6>
-          myFunction(): using parenthesis executes the function. Without them
-          you would hold a reference to the function itself.
+          object. Arrays are considered a special type of object in
+JavaScript
         </h6>
       </div>
       <div class="next">
-        <button class="next" id="btn4">Next</button>
+        <button class="next" id="btn6">Next</button>
       </div>
     </div>
 
     <!-- <script src="js/qstn1.js"></script> -->
     <script>
-      $(document).ready(function () {
+$(document).ready(function () {
   function getData() {
     let loggedInUser = localStorage.getItem("loggedInUser");
     let showData = $("#welcome");
@@ -56,10 +54,10 @@
 
   getData();
 
-  $("#btn4").click(function (e) {
+  $("#btn6").click(function (e) {
     e.preventDefault();
     localStorage.removeItem("loggedInUser");
-    window.location.href = "qstn2.html";
+    window.location.href = "qstn9.html";
     console.log(showData);
   });
 });

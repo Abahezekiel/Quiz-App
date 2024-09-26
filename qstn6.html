@@ -11,35 +11,34 @@
     <div class="quiz-container">
       <h1>Front-End Explorer Quiz</h1>
       <div class="question">
-        <h2>Question 2/10</h2>
+        <h2>Question 6/10</h2>
         <button class="option">
-          How can you print information to the console?
+          what value is given for the left margin: margin: 5px 10px 3px 8px;
         </button>
       </div>
       <div class="options">
         <div class="alpha">
-          <button class="option">console (info)</button>
-          <button class="option">console.log(info)</button>
+          <button class="option">5px</button>
+          <button class="option">8px</button>
         </div>
         <div class="alpha">
-          <button class="option">print(info)</button>
-          <button class="option">print.(info)</button>
+          <button class="option">3px</button>
+          <button class="option">10px</button>
         </div>
       </div>
       <div class="sum">
         <h3>Correct!</h3>
         <h6>
-          console.log(info): Other console methods are console.dir(),
-          console.time()and others.
+          8px: The CSS shorthand property follows the top, right, bottom, left
+          syntax.
         </h6>
       </div>
-
       <div class="next">
-        <button class="next" id="btn5">Next</button>
+        <button class="next" id="btn9">Next</button>
       </div>
     </div>
 
-    <!-- <script src="js/landing.js"></script> -->
+    <!-- <script src="js/qstn1.js"></script> -->
     <script>
       $(document).ready(function () {
         function getData() {
@@ -57,10 +56,10 @@
 
         getData();
 
-        $("#btn5").click(function (e) {
+        $("#btn9").click(function (e) {
           e.preventDefault();
           localStorage.removeItem("loggedInUser");
-          window.location.href = "qstn3.html";
+          window.location.href = "qstn7.html";
           console.log(showData);
         });
       });

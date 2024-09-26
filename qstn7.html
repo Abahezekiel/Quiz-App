@@ -11,36 +11,37 @@
     <div class="quiz-container">
       <h1>Front-End Explorer Quiz</h1>
       <div class="question">
-        <h2>Question 1/10</h2>
+        <h2>Question 7/10</h2>
         <button class="option">
-          How do you call the function 'myFunction' ?
+          Which of the following function of Array object removes the last element from an array and returns
+that element?
         </button>
       </div>
       <div class="options">
         <div class="alpha">
-          <button class="option">myFunction</button>
-          <button class="option">func myFunction()</button>
+          <button class="option">push()</button>
+          <button class="option">join()</button>
         </div>
         <div class="alpha">
-          <button class="option">myFunction()</button>
-          <button class="option">None of those</button>
+          <button class="option">pop()</button>
+          <button class="option">map()</button>
         </div>
       </div>
       <div class="sum">
         <h3>Correct!</h3>
         <h6>
-          myFunction(): using parenthesis executes the function. Without them
-          you would hold a reference to the function itself.
+          pop(): Pop removes the last element while push adds an
+element to the end!
         </h6>
       </div>
       <div class="next">
-        <button class="next" id="btn4">Next</button>
+        <button class="next" id="btn6">Next</button>
       </div>
     </div>
 
     <!-- <script src="js/qstn1.js"></script> -->
     <script>
-      $(document).ready(function () {
+$(document).ready(function () {
   function getData() {
     let loggedInUser = localStorage.getItem("loggedInUser");
     let showData = $("#welcome");
@@ -56,10 +57,10 @@
 
   getData();
 
-  $("#btn4").click(function (e) {
+  $("#btn6").click(function (e) {
     e.preventDefault();
     localStorage.removeItem("loggedInUser");
-    window.location.href = "qstn2.html";
+    window.location.href = "qstn8.html";
     console.log(showData);
   });
 });
@@ -67,3 +68,4 @@
     </script>
   </body>
 </html>
+

@@ -11,36 +11,32 @@
     <div class="quiz-container">
       <h1>Front-End Explorer Quiz</h1>
       <div class="question">
-        <h2>Question 1/10</h2>
-        <button class="option">
-          How do you call the function 'myFunction' ?
-        </button>
+        <h2>Question 5/10</h2>
+        <button class="option">Which is not a JavaScript data type?</button>
       </div>
       <div class="options">
         <div class="alpha">
-          <button class="option">myFunction</button>
-          <button class="option">func myFunction()</button>
+          <button class="option">boolean</button>
+          <button class="option">undefined</button>
         </div>
         <div class="alpha">
-          <button class="option">myFunction()</button>
-          <button class="option">None of those</button>
+          <button class="option">string</button>
+          <button class="option">double</button>
         </div>
       </div>
       <div class="sum">
         <h3>Correct!</h3>
-        <h6>
-          myFunction(): using parenthesis executes the function. Without them
-          you would hold a reference to the function itself.
-        </h6>
+        <h6>double: Although not a part of JavaScript, double is used in
+          other languages such as C++ and Java!</h6>
       </div>
       <div class="next">
-        <button class="next" id="btn4">Next</button>
+        <button class="next" id="btn8">Next</button>
       </div>
     </div>
 
     <!-- <script src="js/qstn1.js"></script> -->
     <script>
-      $(document).ready(function () {
+$(document).ready(function () {
   function getData() {
     let loggedInUser = localStorage.getItem("loggedInUser");
     let showData = $("#welcome");
@@ -56,10 +52,10 @@
 
   getData();
 
-  $("#btn4").click(function (e) {
+  $("#btn8").click(function (e) {
     e.preventDefault();
     localStorage.removeItem("loggedInUser");
-    window.location.href = "qstn2.html";
+    window.location.href = "qstn6.html";
     console.log(showData);
   });
 });
