@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Front-End Quiz</h1>
+      <div class="question">
+        <h2>Question 1/10</h2>
+        <button class="option">
+          How do you call the function 'myFunction' ?
+        </button>
+      </div>
+      <div class="options">
+        <div class="alpha">
+          <button class="option">myFunction</button>
+          <button class="option">func myFunction()</button>
+        </div>
+        <div class="alpha">
+          <button class="option">myFunction()</button>
+          <button class="option">None of those</button>
+        </div>
+      </div>
+      <div class="sum">
+        <h3>Correct!</h3>
+        <h6>
+          myFunction(): using parenthesis executes the function. Without them
+          you would hold a reference to the function itself.
+        </h6>
+      </div>
+      <div class="next">
+        <button class="next" id="btn4">Next</button>
+      </div>
+    </div>
+
+    <script src="js/landing.js"></script>
+  </body>
+</html>

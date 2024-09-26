@@ -14,10 +14,10 @@ $(document).ready(function () {
 
   getData();
 
-  $("#btn3").click(function (e) {
+  $("#btn4").click(function (e) {
     e.preventDefault();
     localStorage.removeItem("loggedInUser");
-    window.location.href = "qstn1.html";
+    window.location.href = "qstn2.html";
     console.log(showData);
   });
 });

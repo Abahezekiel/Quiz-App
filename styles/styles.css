@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #dae8ff;
+  background-image: linear-gradient(45deg, #56ccf2, #2f80ed);
 }
 .login {
   background-color: white;
@@ -59,9 +59,6 @@ button {
   background-color: #3b82f5;
   color: white;
   padding: 5px 10px;
-}
-.btnns {
-  margin-left: 300px;
 }
 
 .new,
@@ -121,9 +118,9 @@ button {
 }
 #welcome {
   background-color: rgba(69, 113, 151, 0.407);
-  height: 100%;
+  /* height: 100%; */
   width: 50%;
-  margin-left: 300px;
+  margin-top: 100px;
 
   align-items: center;
   justify-content: center;
@@ -136,17 +133,103 @@ button {
   height: 100%;
   width: 100%;
   display: flex;
-  /* align-items: center; */
+
   flex-direction: column;
 }
-.side-nav {
-  background-color: #3b82f5;
-  height: 100%;
-  width: 20%;
-  position: fixed;
-}
-.right-nav {
-  background-color: white;
-  height: 15%;
+
+.top-nav {
+  background-color: #000046;
+  height: 100px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: white;
+}
+.top-nav p {
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  display: flex;
+}
+.score {
+  background-color: orangered;
+  height: 50px;
+  width: 200px;
+  align-items: center;
+}
+.time {
+  background-color: orangered;
+  height: 50px;
+  width: 200px;
+}
+.user {
+  background-color: orangered;
+  height: 50px;
+  width: 200px;
+}
+
+/* qstn1 */
+
+.quiz-container {
+  text-align: center;
+  padding: 20px;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
+  background-color: #fc4a1a;
+  width: 80%;
+  height: 80%;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+.question h2 {
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.opt {
+  width: 100%;
+  height: 50px;
+}
+.option {
+  background-color: #000000;
+  border: 2px solid #1cb5e0;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.option:hover {
+  background-color: #1cb5e0;
+}
+.alpha {
+  display: flex;
+  gap: 20px;
+}
+.sum {
+  margin-top: 20px;
+  line-height: 2rem;
+}
+.next {
+  background-color: #1cb5e0;
+  height: 50px !important;
+  /* width: 250px !important; */
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  margin-top: 5px;
 }
