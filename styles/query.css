@@ -1,9 +1,12 @@
 @media (min-width: 320px) and (max-width: 767px) {
-  .top-nav p {
+  .top-nav {
+    gap: 5px;
+  }
+
+  .score p,
+  .time p,
+  .user p {
     font-size: 15px;
-    padding: 15px 0px;
-    /* align-items: center;
-    justify-content: center;
-    display: flex; */
+    margin-top: 10px;
   }
 }
