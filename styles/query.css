@@ -1,0 +1,9 @@
+@media (min-width: 320px) and (max-width: 767px) {
+  .top-nav p {
+    font-size: 15px;
+    padding: 15px 0px;
+    /* align-items: center;
+    justify-content: center;
+    display: flex; */
+  }
+}
