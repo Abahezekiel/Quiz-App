@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     if (loggedInUser) {
       showData.text(
-        `Hello ${loggedInUser}! You're welcome to QUIZ-APP, where we make the lives of developers easy with tutorials that teaches how to solve real-world problems.`
+        `Hello ${loggedInUser}! You're welcome to FRONT-END EXPLORER QUIZ-APP, where we make the lives of developers easy with quiz game that teaches how to familiarize with some Front-End Interview Questions.`
       );
     } else {
       showData.text("User not found. Please login.");

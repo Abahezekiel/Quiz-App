@@ -19,38 +19,30 @@
         <p>Player: Eazy</p>
       </div>
     </div>
-    <div class="quiz-container">
+    <div class="quiz-container quiz">
       
       <h2>Congratulations you made it to the end!!!</h2>
       <h4>You answered 10/10 questions correct</h4>
+
+      <div class="award">
+      <img src="https://img.freepik.com/free-vector/golden-trophy-cup-with-laurel-wreath_1284-46039.jpg" alt="">
+      </div>
+
       <div class="next">
-        <button class="next" id="btn6">Logout</button>
+        <button class="next" id="btn6">Play Again</button>
       </div>
     </div>
 
-    <!-- <script src="js/qstn1.js"></script> -->
     <script>
-$(document).ready(function () {
-  function getData() {
-    let loggedInUser = localStorage.getItem("loggedInUser");
-    let showData = $("#welcome");
-
-    if (loggedInUser) {
-      showData.text(
-        `Hello ${loggedInUser}! You're welcome to QUIZ-APP, where we make the lives of developers easy with tutorials that teaches how to solve real-world problems.`
-      );
-    } else {
-      showData.text("User not found. Please login.");
-    }
-  }
+      $(document).ready(function () {
+        function getData() {
+        }
 
   getData();
 
   $("#btn6").click(function (e) {
     e.preventDefault();
-    localStorage.removeItem("loggedInUser");
     window.location.href = "landing.html";
-    console.log(showData);
   });
 });
 

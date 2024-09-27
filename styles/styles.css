@@ -235,3 +235,16 @@ h1 {
   display: flex !important;
   margin-top: 5px;
 }
+.award img {
+  height: 300px;
+  width: 300px;
+  margin-top: 10px;
+}
+.quiz {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* background-color: green; */
+  font-size: 25px;
+}
