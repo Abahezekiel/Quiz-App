@@ -9,4 +9,59 @@
     font-size: 15px;
     margin-top: 10px;
   }
+
+  .none {
+    display: none !important;
+  }
+
+  /* styles/query.css */
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .body {
+      background-color: red !important;
+    }
+    .logins {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+    }
+    .login {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .logins-form {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .logins-image {
+      display: none;
+    }
+
+    .logins-inner-image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .btnn {
+      width: 100%;
+      padding: 10px;
+    }
+
+    input {
+      width: 320px;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
 }
