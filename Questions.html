@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Explorer Quiz</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        .quiz-container { display: none; }
+        .quiz-container.active { display: block; }
+        .timer { font-size: 20px; color: red; }
+        .start-quiz { display: block; margin: 20px; padding: 10px; font-size: 20px; }
+    </style>
+</head>
+<body>
+    <div id="superContainer">
+      <button id="start"  class="start-quiz">Start Quiz</button>
+        <div class="quiz-container active">
+            <h1>Front-End Explorer Quiz</h1>
+            <div class="timer">Time Remaining: <span id="countdown">20</span> seconds</div>
+            <div class="question">
+              <h2>Question 1/10</h2>
+              <p>In HTML5, the default character-set is known to be of:</p>
+            </div>
+            <div class="options">
+              <div class="alpha">
+                <button class="option">UTF-5</button>
+                <button class="option">UTF-6</button>
+              </div>
+              <div class="alpha">
+                <button class="option">UTF-7</button>
+                <button class="option">UTF-8</button>
+              </div>
+            </div>
+            <div class="sum">
+              <h3>Correct!</h3>
+              <h6>UTF-8</h6>
+            </div>
+            <div class="next">
+              <button class="next">Next</button>
+            </div>
+          </div>
+          <div class="quiz-container">
+            
+            <h1>Front-End Explorer Quiz</h1>
+            <div class="timer">Time Remaining: <span id="countdown">20</span> seconds</div>
+        <div class="question">
+          <h2>Question 2/10</h2>
+          <button class="option">
+            Which JavaScript method is used to add a new element to the end of an array?
+          </button>
+        </div>
+        <div class="options">
+          <div class="alpha">
+            <button class="option">Push()</button>
+            <button class="option">Unshift()</button>
+           
+          </div>
+          <div class="alpha">
+            <button class="option">Pop()</button>
+            <button class="option">Shift()</button>
+          </div>
+        </div>
+        <div class="sum">
+          <h3>Correct!</h3>
+          <h6>
+           Push()
+          </h6>
+        </div>
+        <div class="next">
+          <button class="next" id="btn7">Next</button>
+        </div>
+      </div>
+      <div class="quiz-container">
+      
+        <h1>Front-End Explorer Quiz</h1>
+        <div class="timer">Time Remaining: <span id="countdown">20</span> seconds</div>
+        <div class="question">
+          <h2>Question 3/10</h2>
+          <button class="option">
+            How can you link an external JavaScript file to an HTML document?
+          </button>
+        </div>
+        <div class="options">
+          <div class="alpha">
+            <button class="option"><js src=”script.js”></js></button>
+            <button class="option"><script src=”script.js”></script></button>
+           
+          </div>
+          <div class="alpha">
+            <button class="option">  a<link rel=”script” href=”script.js”><button>
+            <button class="option">  b<script href=”script.js”></script></button>
+          </div>
+        </div>
+        <div class="sum">
+          <h3>Correct!</h3>
+          <h6>
+            <script src=”script.js”></script>
+          </h6>
+        </div>
+        <div class="next">
+          <button class="next" id="btn7">Next</button>
+        </div>
+      </div>
+      <div class="quiz-container">
+      
+        <h1>Front-End Explorer Quiz</h1>
+        <div class="timer">Time Remaining: <span id="countdown">20</span> seconds</div>
+        <div class="question">
+          <h2>Question 4/10</h2>
+          <button class="option">
+            In JavaScript, what does the “NaN” value represent?
+          </button>
+        </div>
+        <div class="options">
+          <div class="alpha">
+            <button class="checked">It stands for “Not a Number” </js></button>
+            <button class="checked">It stands for “Not a Null” and indicates an undefined value.</script></button>
+           
+          </div>
+          <div class="alpha">
+            <button class="checked"> It represents a negative number.<button>
+            <button class="checked">It represents the absence of a value.</button>
+          </div>
+        </div>
+        <div class="sum">
+          <h3>Correct!</h3>
+          <h6>
+            It stands for “Not a Number” and indicates an unrepresentable value resulting from an invalid arithmetic operation.  <script src=”script.js”></script>
+          </h6>
+        </div>
+        <div class="next">
+          <button class="next" id="btn7">Next</button>
+        </div>
+      </div>
+
+      <script src="js/Questions.js"></script>
+</body>
+</html>
