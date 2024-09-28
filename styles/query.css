@@ -1,4 +1,5 @@
 @media (min-width: 320px) and (max-width: 767px) {
+  /* media query question 1-10 begins */
   .top-nav {
     gap: 5px;
   }
@@ -13,57 +14,58 @@
   .none {
     display: none !important;
   }
+  /* media query question 1-10 end */
 
-  /* styles/query.css */
+  /* media query indexpage begins */
 
-  @media (min-width: 320px) and (max-width: 767px) {
-    .body {
-      background-color: red !important;
-    }
-    .logins {
-      flex-direction: column;
-      align-items: center;
-      width: 90%;
-    }
-    .login {
-      flex-direction: column;
-      align-items: center;
-      width: 100%;
-    }
-
-    .logins-form {
-      width: 90%;
-      margin: 0 auto;
-    }
-
-    .logins-image {
-      display: none;
-    }
-
-    .logins-inner-image img {
-      width: 100%;
-      height: auto;
-    }
-
-    .btnn {
-      width: 100%;
-      padding: 10px;
-    }
-
-    input {
-      width: 320px;
-      padding: 10px;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      font-size: 1.5rem;
-    }
-
-    p {
-      font-size: 1rem;
-    }
+  .logins {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
   }
+  .login {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .logins-form {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .logins-image {
+    display: none;
+  }
+
+  .logins-inner-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .btnn {
+    width: 100%;
+    padding: 10px;
+  }
+
+  input {
+    width: 320px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* media query indexpage ends */
+
+  /* media query loginpage begins */
+
   .btnn {
     width: 10rem;
 
@@ -72,4 +74,19 @@
   #btn {
     width: 10rem;
   }
+
+  /* media query loginpage ends */
+
+  /* media query landing begins */
+
+  #welcome {
+    background-color: orangered;
+    color: white;
+    width: 90%;
+    /* margin-top: 60px; */
+    display: flex;
+    justify-content: center;
+  }
+
+  /* media query landing ends */
 }
